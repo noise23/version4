@@ -89,7 +89,7 @@ unsigned short GetListenPort()
 
 void CNode::PushGetBlocks(CBlockIndex *pindexBegin, uint256 hashEnd) 
 {
-    uint nCurrentTime = (uint)GetTime();
+    unsigned int nCurrentTime = (unsigned int)GetTime();
 
     /* Time limit for asking a particular peer */
     if((nCurrentTime - 5U) < nGetblocksAskTime)
